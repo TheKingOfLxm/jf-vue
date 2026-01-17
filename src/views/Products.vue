@@ -2,95 +2,195 @@
 import { ref, computed } from 'vue';
 
 const activeCategory = ref(0);
-const categories = ['全部产品', '打叶复考风机', '离心风机', '轴流风机', '屋顶风机'];
 
+// 基于实际PDF文件结构的产品分类
+const categories = [
+    '全部产品',
+    '卷接机组风机',
+    'ZJ17卷烟机组风机',
+    'ZJ116卷烟机组风机',
+    'ZJ118卷烟机组风机',
+    'ZJ119卷烟机组风机',
+    '滤棒成型机组风机',
+    '进口卷烟机组风机',
+    '京丰电机（风机专用）',
+    '其它产品'
+];
+
+// 产品数据（基于PDF文件列表）
 const allProducts = [
+    // 卷接机组风机总览
     {
         category: 1,
-        name: '打叶复考风机 DF-100',
-        desc: '烟草行业专用设备，高效节能，运行稳定',
+        name: '卷烟机组专用风机',
+        desc: '适用于各类卷烟机组，专业配套设计',
+        pdf: '101卷烟机组专用风机总览.pdf',
         image: 'https://picsum.photos/400/300?random=30',
         params: [
-            { label: '风量', value: '10000-50000 m³/h' },
-            { label: '功率', value: '5.5-45 kW' },
-            { label: '噪音', value: '≤75 dB(A)' }
+            { label: '类型', value: '卷接机组专用' },
+            { label: '应用', value: '烟草行业' }
         ]
     },
     {
         category: 1,
-        name: '打叶复考风机 DF-200',
-        desc: '大流量设计，适用于大型烟草企业',
+        name: '卷烟机组风机成套组件',
+        desc: '成套供应，安装便捷，性能稳定',
+        pdf: '102卷烟机组风机成套组件产品展示.pdf',
         image: 'https://picsum.photos/400/300?random=31',
         params: [
-            { label: '风量', value: '20000-80000 m³/h' },
-            { label: '功率', value: '11-90 kW' },
-            { label: '噪音', value: '≤78 dB(A)' }
+            { label: '类型', value: '成套组件' },
+            { label: '特点', value: '模块化设计' }
         ]
     },
+    // ZJ17卷烟机组风机
     {
         category: 2,
-        name: '离心风机 4-72',
-        desc: '高效节能，广泛用于工业通风',
+        name: 'ZJ17卷接机组风机',
+        desc: '专为ZJ17卷接机组设计配套',
+        pdf: '131-ZJ17卷接机组风机说明书.pdf',
         image: 'https://picsum.photos/400/300?random=32',
         params: [
-            { label: '风量', value: '1000-100000 m³/h' },
-            { label: '全压', value: '200-3000 Pa' },
-            { label: '效率', value: '≥85%' }
+            { label: '机型', value: 'ZJ17' },
+            { label: '类型', value: '卷接机组风机' }
         ]
     },
+    // ZJ116卷烟机组风机
     {
-        category: 2,
-        name: '离心风机 9-19',
-        desc: '高压风机，适用于输送物料',
+        category: 3,
+        name: 'ZJ116卷接机组风机',
+        desc: '专为ZJ116卷接机组设计配套',
+        pdf: '132-ZJ116卷接机组风机说明书.pdf',
         image: 'https://picsum.photos/400/300?random=33',
         params: [
-            { label: '风量', value: '800-60000 m³/h' },
-            { label: '全压', value: '3000-15000 Pa' },
-            { label: '效率', value: '≥82%' }
+            { label: '机型', value: 'ZJ116' },
+            { label: '类型', value: '卷接机组风机' }
         ]
     },
+    // ZJ118卷烟机组风机
     {
-        category: 3,
-        name: '轴流风机 T35',
-        desc: '低噪音大风量，适用于一般通风',
+        category: 4,
+        name: 'ZJ118卷接机组风机',
+        desc: '专为ZJ118卷接机组设计配套',
+        pdf: '133-ZJ118卷接机组风机说明书.pdf',
         image: 'https://picsum.photos/400/300?random=34',
         params: [
-            { label: '风量', value: '5000-50000 m³/h' },
-            { label: '功率', value: '0.25-11 kW' },
-            { label: '噪音', value: '≤70 dB(A)' }
+            { label: '机型', value: 'ZJ118' },
+            { label: '类型', value: '卷接机组风机' }
         ]
     },
+    // ZJ119卷烟机组风机
     {
-        category: 4,
-        name: '屋顶风机 DW-3',
-        desc: '防腐耐用，安装方便',
+        category: 5,
+        name: 'ZJ119卷接机组风机',
+        desc: '专为ZJ119卷接机组设计配套',
+        pdf: '134-ZJ119卷接机组风机说明书.pdf',
         image: 'https://picsum.photos/400/300?random=35',
         params: [
-            { label: '风量', value: '2000-20000 m³/h' },
-            { label: '功率', value: '0.37-3 kW' },
-            { label: '材质', value: '不锈钢/玻璃钢' }
+            { label: '机型', value: 'ZJ119' },
+            { label: '类型', value: '卷接机组风机' }
         ]
     },
+    // 滤棒成型机组风机
     {
-        category: 4,
-        name: '屋顶风机 DW-5',
-        desc: '低噪音设计，适用于民用建筑',
+        category: 6,
+        name: 'ZL28、ZL48滤棒成型机风机',
+        desc: '适用于ZL28、ZL48滤棒成型机',
+        pdf: '125-ZL28、ZL48滤棒成型机风机实物照片.pdf',
         image: 'https://picsum.photos/400/300?random=36',
         params: [
-            { label: '风量', value: '3000-30000 m³/h' },
-            { label: '功率', value: '0.55-5.5 kW' },
-            { label: '材质', value: '铝合金/不锈钢' }
+            { label: '机型', value: 'ZL28/ZL48' },
+            { label: '类型', value: '滤棒成型机风机' }
         ]
     },
     {
-        category: 3,
-        name: '轴流风机 BT35',
-        desc: '防爆型，适用于易燃易爆场所',
+        category: 6,
+        name: 'ZL26A滤棒成型机负压风机',
+        desc: '负压系统专用，稳定高效',
+        pdf: '135-ZL26A滤棒成型机负压风机说明书.pdf',
         image: 'https://picsum.photos/400/300?random=37',
         params: [
-            { label: '风量', value: '3000-40000 m³/h' },
-            { label: '功率', value: '0.37-7.5 kW' },
-            { label: '防爆等级', value: 'Ex d IIB T4' }
+            { label: '机型', value: 'ZL26A' },
+            { label: '类型', value: '负压风机' }
+        ]
+    },
+    {
+        category: 6,
+        name: 'KDF2滤棒成型机风机',
+        desc: '适用于KDF2滤棒成型机',
+        pdf: '141-KDF2滤棒成型机风机说明书.pdf',
+        image: 'https://picsum.photos/400/300?random=38',
+        params: [
+            { label: '机型', value: 'KDF2' },
+            { label: '类型', value: '滤棒成型机风机' }
+        ]
+    },
+    // 进口卷烟机组风机
+    {
+        category: 7,
+        name: 'GD121卷接机组风机',
+        desc: '进口GD121卷接机组配套风机',
+        pdf: '136-GD121卷接机组风机说明书.pdf',
+        image: 'https://picsum.photos/400/300?random=39',
+        params: [
+            { label: '机型', value: 'GD121' },
+            { label: '类型', value: '进口机组风机' }
+        ]
+    },
+    // 京丰电机
+    {
+        category: 8,
+        name: '京丰风冷电机（风机专用）',
+        desc: '专为风机设计的专用电机',
+        pdf: '京丰风冷电机(风机专用)说明书.pdf',
+        image: 'https://picsum.photos/400/300?random=40',
+        params: [
+            { label: '类型', value: '风冷电机' },
+            { label: '用途', value: '风机专用' }
+        ]
+    },
+    // 其它产品
+    {
+        category: 9,
+        name: 'JF04 加香加料装置',
+        desc: '精准控制，提高加料均匀性',
+        pdf: 'JF04-加香加料装置.pdf',
+        image: 'https://picsum.photos/400/300?random=41',
+        params: [
+            { label: '型号', value: 'JF04' },
+            { label: '类型', value: '加香加料装置' }
+        ]
+    },
+    {
+        category: 9,
+        name: 'JF05 电子皮带秤',
+        desc: '高精度计量，稳定可靠',
+        pdf: 'JF05-电子皮带秤.pdf',
+        image: 'https://picsum.photos/400/300?random=42',
+        params: [
+            { label: '型号', value: 'JF05' },
+            { label: '类型', value: '电子计量设备' }
+        ]
+    },
+    {
+        category: 9,
+        name: 'JF06 LED电子标牌系统',
+        desc: '现场工业显示，清晰直观',
+        pdf: 'JF06-Led电子标牌系统.pdf',
+        image: 'https://picsum.photos/400/300?random=43',
+        params: [
+            { label: '型号', value: 'JF06' },
+            { label: '类型', value: '电子标牌系统' }
+        ]
+    },
+    {
+        category: 9,
+        name: 'JF07 桁架式储柜',
+        desc: '大容量存储，自动化控制',
+        pdf: 'JF07-桁架式储柜.pdf',
+        image: 'https://picsum.photos/400/300?random=44',
+        params: [
+            { label: '型号', value: 'JF07' },
+            { label: '类型', value: '储柜设备' }
         ]
     }
 ];

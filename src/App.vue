@@ -132,13 +132,16 @@ onUnmounted(() => {
             <div class="header-top">
                 <div class="container">
                     <div class="header-left">
-                        <span class="company-name">京丰</span>
-                        <span class="company-fullname">北京京丰通风设备有限公司</span>
+                        <img src="/logo.png" alt="京丰 logo" class="company-logo">
+                        <div class="company-info">
+                            <span class="company-name">京丰</span>
+                            <span class="company-fullname">北京京丰通风设备有限公司</span>
+                        </div>
                     </div>
                     <div class="header-right">
                         <span class="phone-icon">📞</span>
                         <span class="phone-label">咨询服务热线：</span>
-                        <span class="phone-number">400-123-4567</span>
+                        <span class="phone-number">18810213381</span>
                     </div>
                 </div>
             </div>
@@ -237,16 +240,17 @@ onUnmounted(() => {
                 <div class="footer-content">
                     <div class="footer-left">
                         <div class="footer-info-list">
-                            <p><span class="info-label">联系我们</span></p>
-                            <p><span class="info-label">服务热线：</span><span class="info-value">400-123-4567</span></p>
-                            <p><span class="info-label">地址：</span><span class="info-value">北京市丰台区XXX路XXX号</span></p>
-                            <p><span class="info-label">域名：</span><span class="info-value">www.jingfeng.com</span></p>
+                            <p><span class="info-label">电话微信：</span><span class="info-value">18810213381</span></p>
+                            <p><span class="info-label">技术支持：</span><span class="info-value">18810213372</span></p>
+                            <p><span class="info-label">邮箱：</span><span class="info-value">18810213381@126.com</span></p>
+                            <p><span class="info-label">北京地址：</span><span class="info-value">北京市大兴区亦庄文化公园8号院35号楼1406室</span></p>
+                            <p><span class="info-label">工厂地址：</span><span class="info-value">河北省张家口市宣化区东土关街39号</span></p>
                         </div>
                     </div>
                     <div class="footer-right">
                         <div class="footer-slogan">致诚精品，京丰风机</div>
                         <div class="qrcode">
-                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.jingfeng.com" alt="二维码">
+                            <img src="/ewm.png" alt="微信二维码">
                         </div>
                     </div>
                 </div>

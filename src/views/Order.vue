@@ -1,14 +1,12 @@
 <script setup>
-import { ref } from 'vue';
-
 const orderSections = [
     {
         title: '一、订货方式',
         content: `
             <p>1. 现场订货：客户可直接到我公司销售部洽谈订货。</p>
-            <p>2. 电话订货：拨打服务热线 400-123-4567 或 010-12345678。</p>
-            <p>3. 网络订货：通过网站在线留言或发送邮件至 info@jingfeng.com。</p>
-            <p>4. 传真订货：将订货单传真至 010-12345679。</p>
+            <p>2. 电话微信订货：拨打 18810213381 或添加微信咨询。</p>
+            <p>3. 网络订货：通过网站在线留言或发送邮件至 18810213381@126.com。</p>
+            <p>4. 技术支持：如需技术咨询，请致电 18810213372。</p>
         `
     },
     {
@@ -69,11 +67,11 @@ const orderSections = [
             <div class="contact-box">
                 <h3>联系我们</h3>
                 <div class="contact-info">
-                    <p><span class="contact-label">服务热线：</span>400-123-4567</p>
-                    <p><span class="contact-label">联系电话：</span>010-12345678</p>
-                    <p><span class="contact-label">传真：</span>010-12345679</p>
-                    <p><span class="contact-label">邮箱：</span>info@jingfeng.com</p>
-                    <p><span class="contact-label">地址：</span>北京市丰台区XXX路XXX号</p>
+                    <p><span class="contact-label">电话微信：</span>18810213381</p>
+                    <p><span class="contact-label">技术支持：</span>18810213372</p>
+                    <p><span class="contact-label">邮箱：</span>18810213381@126.com</p>
+                    <p><span class="contact-label">北京地址：</span>北京市大兴区亦庄文化公园8号院35号楼1406室</p>
+                    <p><span class="contact-label">工厂地址：</span>河北省张家口市宣化区东土关街39号</p>
                 </div>
             </div>
         </section>

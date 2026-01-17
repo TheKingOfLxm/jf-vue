@@ -75,6 +75,18 @@ img {
     gap: 10px;
 }
 
+.company-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .company-name {
     font-size: 24px;
     font-weight: bold;
