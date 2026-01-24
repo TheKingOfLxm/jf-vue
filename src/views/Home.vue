@@ -4,10 +4,10 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const products = [
-    { name: '打叶复考风机', desc: '烟草行业专用设备，高效节能', image: 'https://picsum.photos/400/300?random=20' },
-    { name: '离心风机系列', desc: '运行稳定，噪音低', image: 'https://picsum.photos/400/300?random=21' },
-    { name: '轴流风机系列', desc: '风量大，效率高', image: 'https://picsum.photos/400/300?random=22' },
-    { name: '屋顶风机', desc: '安装方便，防腐耐用', image: 'https://picsum.photos/400/300?random=23' }
+    { name: '打叶复烤专业风机', desc: '烟草行业专用设备，高效节能', image: '/images/products/打叶复烤专业风机.jpg' },
+    { name: '卷接专业风机', desc: '运行稳定，噪音低', image: '/images/products/卷接专业风机.jpg' },
+    { name: '制丝专业风机', desc: '风量大，效率高', image: '/images/products/制丝专业风机.jpg' },
+    { name: '其他烟机设备', desc: '安装方便，防腐耐用', image: '/images/products/其他烟机设备.jpg' }
 ];
 
 const advantages = [

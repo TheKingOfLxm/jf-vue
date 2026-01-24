@@ -25,7 +25,7 @@ const allProducts = [
         name: '卷烟机组专用风机',
         desc: '适用于各类卷烟机组，专业配套设计',
         pdf: '101卷烟机组专用风机总览.pdf',
-        image: 'https://picsum.photos/400/300?random=30',
+        image: '/images/products/卷接专业风机.jpg',
         params: [
             { label: '类型', value: '卷接机组专用' },
             { label: '应用', value: '烟草行业' }
@@ -36,7 +36,7 @@ const allProducts = [
         name: '卷烟机组风机成套组件',
         desc: '成套供应，安装便捷，性能稳定',
         pdf: '102卷烟机组风机成套组件产品展示.pdf',
-        image: 'https://picsum.photos/400/300?random=31',
+        image: '/images/products/卷接专业风机.jpg',
         params: [
             { label: '类型', value: '成套组件' },
             { label: '特点', value: '模块化设计' }
@@ -48,7 +48,7 @@ const allProducts = [
         name: 'ZJ17卷接机组风机',
         desc: '专为ZJ17卷接机组设计配套',
         pdf: '131-ZJ17卷接机组风机说明书.pdf',
-        image: 'https://picsum.photos/400/300?random=32',
+        image: '/images/products/卷接专业风机.jpg',
         params: [
             { label: '机型', value: 'ZJ17' },
             { label: '类型', value: '卷接机组风机' }
@@ -60,7 +60,7 @@ const allProducts = [
         name: 'ZJ116卷接机组风机',
         desc: '专为ZJ116卷接机组设计配套',
         pdf: '132-ZJ116卷接机组风机说明书.pdf',
-        image: 'https://picsum.photos/400/300?random=33',
+        image: '/images/products/卷接专业风机.jpg',
         params: [
             { label: '机型', value: 'ZJ116' },
             { label: '类型', value: '卷接机组风机' }
@@ -72,7 +72,7 @@ const allProducts = [
         name: 'ZJ118卷接机组风机',
         desc: '专为ZJ118卷接机组设计配套',
         pdf: '133-ZJ118卷接机组风机说明书.pdf',
-        image: 'https://picsum.photos/400/300?random=34',
+        image: '/images/products/卷接专业风机.jpg',
         params: [
             { label: '机型', value: 'ZJ118' },
             { label: '类型', value: '卷接机组风机' }
@@ -84,7 +84,7 @@ const allProducts = [
         name: 'ZJ119卷接机组风机',
         desc: '专为ZJ119卷接机组设计配套',
         pdf: '134-ZJ119卷接机组风机说明书.pdf',
-        image: 'https://picsum.photos/400/300?random=35',
+        image: '/images/products/卷接专业风机.jpg',
         params: [
             { label: '机型', value: 'ZJ119' },
             { label: '类型', value: '卷接机组风机' }
@@ -96,7 +96,7 @@ const allProducts = [
         name: 'ZL28、ZL48滤棒成型机风机',
         desc: '适用于ZL28、ZL48滤棒成型机',
         pdf: '125-ZL28、ZL48滤棒成型机风机实物照片.pdf',
-        image: 'https://picsum.photos/400/300?random=36',
+        image: '/images/products/制丝专业风机.jpg',
         params: [
             { label: '机型', value: 'ZL28/ZL48' },
             { label: '类型', value: '滤棒成型机风机' }
@@ -107,7 +107,7 @@ const allProducts = [
         name: 'ZL26A滤棒成型机负压风机',
         desc: '负压系统专用，稳定高效',
         pdf: '135-ZL26A滤棒成型机负压风机说明书.pdf',
-        image: 'https://picsum.photos/400/300?random=37',
+        image: '/images/products/制丝专业风机.jpg',
         params: [
             { label: '机型', value: 'ZL26A' },
             { label: '类型', value: '负压风机' }
@@ -118,7 +118,7 @@ const allProducts = [
         name: 'KDF2滤棒成型机风机',
         desc: '适用于KDF2滤棒成型机',
         pdf: '141-KDF2滤棒成型机风机说明书.pdf',
-        image: 'https://picsum.photos/400/300?random=38',
+        image: '/images/products/制丝专业风机.jpg',
         params: [
             { label: '机型', value: 'KDF2' },
             { label: '类型', value: '滤棒成型机风机' }
@@ -130,7 +130,7 @@ const allProducts = [
         name: 'GD121卷接机组风机',
         desc: '进口GD121卷接机组配套风机',
         pdf: '136-GD121卷接机组风机说明书.pdf',
-        image: 'https://picsum.photos/400/300?random=39',
+        image: '/images/products/卷接专业风机.jpg',
         params: [
             { label: '机型', value: 'GD121' },
             { label: '类型', value: '进口机组风机' }
@@ -142,7 +142,7 @@ const allProducts = [
         name: '京丰风冷电机（风机专用）',
         desc: '专为风机设计的专用电机',
         pdf: '京丰风冷电机(风机专用)说明书.pdf',
-        image: 'https://picsum.photos/400/300?random=40',
+        image: '/images/products/其他烟机设备.jpg',
         params: [
             { label: '类型', value: '风冷电机' },
             { label: '用途', value: '风机专用' }
@@ -154,7 +154,7 @@ const allProducts = [
         name: 'JF04 加香加料装置',
         desc: '精准控制，提高加料均匀性',
         pdf: 'JF04-加香加料装置.pdf',
-        image: 'https://picsum.photos/400/300?random=41',
+        image: '/images/products/其他烟机设备.jpg',
         params: [
             { label: '型号', value: 'JF04' },
             { label: '类型', value: '加香加料装置' }
@@ -165,7 +165,7 @@ const allProducts = [
         name: 'JF05 电子皮带秤',
         desc: '高精度计量，稳定可靠',
         pdf: 'JF05-电子皮带秤.pdf',
-        image: 'https://picsum.photos/400/300?random=42',
+        image: '/images/products/其他烟机设备.jpg',
         params: [
             { label: '型号', value: 'JF05' },
             { label: '类型', value: '电子计量设备' }
@@ -176,7 +176,7 @@ const allProducts = [
         name: 'JF06 LED电子标牌系统',
         desc: '现场工业显示，清晰直观',
         pdf: 'JF06-Led电子标牌系统.pdf',
-        image: 'https://picsum.photos/400/300?random=43',
+        image: '/images/products/其他烟机设备.jpg',
         params: [
             { label: '型号', value: 'JF06' },
             { label: '类型', value: '电子标牌系统' }
@@ -187,7 +187,7 @@ const allProducts = [
         name: 'JF07 桁架式储柜',
         desc: '大容量存储，自动化控制',
         pdf: 'JF07-桁架式储柜.pdf',
-        image: 'https://picsum.photos/400/300?random=44',
+        image: '/images/products/其他烟机设备.jpg',
         params: [
             { label: '型号', value: 'JF07' },
             { label: '类型', value: '储柜设备' }
@@ -201,7 +201,14 @@ const filteredProducts = computed(() => {
 });
 
 const showDetail = (product) => {
-    alert(product.name + '\n\n' + product.params.map(p => p.label + '：' + p.value).join('\n'));
+    // 在新窗口打开PDF说明书
+    if (product.pdf) {
+        window.open('/pdfs/' + product.pdf, '_blank');
+    }
+};
+
+const openPdf = (product) => {
+    showDetail(product);
 };
 </script>
 
@@ -229,10 +236,10 @@ const showDetail = (product) => {
             <!-- 产品列表 -->
             <div class="product-list-full">
                 <div class="product-item-full" v-for="(product, index) in filteredProducts" :key="index">
-                    <div class="product-img">
+                    <div class="product-img" @click="openPdf(product)" style="cursor: pointer;" title="点击查看说明书">
                         <img :src="product.image" :alt="product.name">
                         <div class="product-mask">
-                            <a @click.prevent="showDetail(product)">查看详情</a>
+                            <a @click.stop.prevent="showDetail(product)">查看详情</a>
                         </div>
                     </div>
                     <div class="product-info">

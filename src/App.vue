@@ -13,9 +13,9 @@ let touchStartX = 0;
 let touchEndX = 0;
 
 const slides = [
-    { image: 'https://picsum.photos/1920/500?random=1', title: '五十年技术积累', desc: '专业风机制造，品质保证' },
-    { image: 'https://picsum.photos/1920/500?random=2', title: '打叶复考风机', desc: '烟草行业专用设备' },
-    { image: 'https://picsum.photos/1920/500?random=3', title: '离心风机系列', desc: '高效节能，运行稳定' }
+    { image: '/images/home/首页头图 (1).jpg', title: '五十年技术积累', desc: '专业风机制造，品质保证' },
+    { image: '/images/home/首页头图 (2).jpg', title: '打叶复烤风机', desc: '烟草行业专用设备' },
+    { image: '/images/home/首页头图 (3).jpg', title: '离心风机系列', desc: '高效节能，运行稳定' }
 ];
 
 const currentRoute = computed(() => {
@@ -191,7 +191,7 @@ onUnmounted(() => {
                             @load="handleImageLoad(index)"
                         >
                     </div>
-                    <div class="banner-caption">
+                    <div class="banner-caption" style="display: none;">
                         <h2>{{ slide.title }}</h2>
                         <p>{{ slide.desc }}</p>
                     </div>

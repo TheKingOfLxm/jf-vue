@@ -24,7 +24,7 @@ const history = [
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://picsum.photos/600/400?random=50" alt="公司图片">
+                    <img src="/images/about/公司简介配图.png" alt="公司简介配图">
                 </div>
                 <div class="about-text">
                     <p>北京市京丰通风设备有限公司（以下简称北京京丰）位于首都北京，始创于1969年；是生产专业风机、在线添加设备、电子计量设备、现场工业显示设备及自动化系统集成的高科技技术企业。公司主要服务于烟草行业，是中国烟草交易中心会员。</p>
