@@ -162,26 +162,26 @@ const brandSections = [
 .brand-intro {
     text-align: center;
     margin-bottom: 40px;
-    padding: 30px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 12px;
-    position: relative;
-    overflow: hidden;
+    border: 1px solid var(--border-color);
 }
 
 .brand-hero-img {
     width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .brand-intro h3 {
-    color: var(--white);
-    font-size: 24px;
+    color: var(--primary-color);
+    font-size: 26px;
     margin: 0;
     letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .brand-content {
