@@ -257,55 +257,57 @@ const getCategoryName = () => {
 <style scoped>
 /* 一级分类样式 */
 .category-level-1 {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    padding: 25px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .level-title {
-    font-size: 20px;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--accent-color);
-    display: inline-block;
+    font-size: 16px;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: left;
 }
 
 .level-subtitle {
-    font-size: 14px;
-    color: var(--text-gray);
+    font-size: 13px;
+    color: var(--text-light);
     font-weight: normal;
-    margin-left: 10px;
+    margin-left: 0;
 }
 
 .category-tabs {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
 .category-tab-btn {
-    padding: 12px 30px;
-    background-color: var(--white);
-    border: 2px solid var(--border-color);
-    border-radius: 30px;
+    padding: 10px 22px;
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--text-dark);
     font-weight: 500;
 }
 
 .category-tab-btn:hover {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(232, 121, 42, 0.2);
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(26, 95, 138, 0.2);
 }
 
 .category-tab-btn.active {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
-    border-color: transparent;
-    box-shadow: 0 4px 15px rgba(26, 95, 138, 0.3);
+    box-shadow: 0 3px 10px rgba(26, 95, 138, 0.3);
 }
 
 /* 二级产品展示样式 */
