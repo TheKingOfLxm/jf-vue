@@ -256,7 +256,7 @@ onUnmounted(() => {
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>Copyright © 2024 北京京丰通风设备有限公司 版权所有 | 京ICP备XXXXXXXX号</p>
+                    <p>Copyright © 2026 北京京丰通风设备有限公司 版权所有 | 京ICP备XXXXXXXX号</p>
                 </div>
             </div>
         </footer>
