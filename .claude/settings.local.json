@@ -8,7 +8,8 @@
       "Bash(\"D:\\\\Anaconda\\\\python.exe\":*)",
       "Bash(\"D:\\\\Anaconda\\\\python.exe\" -c \"\nfrom pptx import Presentation\nprs = Presentation\\(''D:/jfwl/京丰宣传资料/网站首页/关于我们/001公司介绍--公司历程.pptx''\\)\nfor slide_num, slide in enumerate\\(prs.slides\\):\n    print\\(f''\\\\n=== 幻灯片 {slide_num + 1} ===''\\)\n    for shape in slide.shapes:\n        if hasattr\\(shape, ''text''\\):\n            print\\(shape.text\\)\n        if shape.shape_type == 14:\n            for sub_shape in shape.shapes:\n                if hasattr\\(sub_shape, ''text''\\):\n                    print\\(sub_shape.text\\)\n        if shape.shape_type == 19:\n            for row in shape.table.rows:\n                for cell in row.cells:\n                    print\\(cell.text\\)\n\")",
       "Bash(chcp:*)",
-      "Bash(\":*)"
+      "Bash(\":*)",
+      "Bash(docx2txt \"D:/jf物料/网页修改资料/网站首页/关于我们/京丰智造：50年如一初心，创新永不止步.docx\")"
     ]
   }
 }

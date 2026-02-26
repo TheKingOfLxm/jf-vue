@@ -35,7 +35,7 @@ const goToProducts = () => {
             <div class="intro-stats">
                 <div class="stat-item">
                     <div class="stat-number">100<span>+</span></div>
-                    <div class="stat-label">生产研发200余种风机产品类型</div>
+                    <div class="stat-label">生产研发100余种风机产品类型</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">50<span class="stat-unit">years</span></div>

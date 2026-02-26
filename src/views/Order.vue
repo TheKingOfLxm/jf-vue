@@ -63,17 +63,6 @@ const orderSections = [
                     <div class="order-text" v-html="section.content"></div>
                 </div>
             </div>
-
-            <div class="contact-box">
-                <h3>联系我们</h3>
-                <div class="contact-info">
-                    <p><span class="contact-label">电话微信：</span>18810213381</p>
-                    <p><span class="contact-label">技术支持：</span>18810213372</p>
-                    <p><span class="contact-label">邮箱：</span>18810213381@126.com</p>
-                    <p><span class="contact-label">北京地址：</span>北京市大兴区亦庄文化公园8号院35号楼1406室</p>
-                    <p><span class="contact-label">工厂地址：</span>河北省张家口市宣化区东土关街39号</p>
-                </div>
-            </div>
         </section>
     </div>
 </template>

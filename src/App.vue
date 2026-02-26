@@ -252,6 +252,7 @@ onUnmounted(() => {
                         <div class="qrcode">
                             <img src="/ewm.png" alt="微信二维码">
                         </div>
+                        <p class="qrcode-tip">产品详情可微信扫码咨询</p>
                     </div>
                 </div>
                 <div class="footer-bottom">
