@@ -1,9 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
-import Products from '../views/Products.vue';
-import Honors from '../views/Honors.vue';
-import Order from '../views/Order.vue';
+
+const Home = () => import('../views/Home.vue');
+const About = () => import('../views/About.vue');
+const Products = () => import('../views/Products.vue');
+const Honors = () => import('../views/Honors.vue');
+const Order = () => import('../views/Order.vue');
 
 const router = createRouter({
     history: createWebHashHistory(),

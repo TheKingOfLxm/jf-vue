@@ -161,24 +161,24 @@ const brandSections = [
 <style scoped>
 .brand-intro {
     text-align: center;
-    margin-bottom: 40px;
-    padding: 40px 30px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 8px;
 }
 
 .brand-hero-img {
-    width: 100%;
+    width: 70%;
+    max-width: 700px;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 25px;
+    margin: 0 auto 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .brand-intro h3 {
     color: var(--primary-color);
-    font-size: 26px;
+    font-size: 22px;
     margin: 0;
     letter-spacing: 2px;
     font-weight: 600;

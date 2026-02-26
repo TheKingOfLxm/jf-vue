@@ -7,10 +7,21 @@ const currentSlide = ref(0);
 const isPaused = ref(false);
 const isLoaded = ref([false, false, false]);
 const progress = ref(0);
+const isMobileMenuOpen = ref(false);
 let autoPlayInterval = null;
 let progressInterval = null;
 let touchStartX = 0;
 let touchEndX = 0;
+
+const toggleMobileMenu = () => {
+    isMobileMenuOpen.value = !isMobileMenuOpen.value;
+    document.body.style.overflow = isMobileMenuOpen.value ? 'hidden' : '';
+};
+
+const closeMobileMenu = () => {
+    isMobileMenuOpen.value = false;
+    document.body.style.overflow = '';
+};
 
 const slides = [
     { image: '/images/home/首页头图 (1).jpg', title: '五十年技术积累', desc: '专业风机制造，品质保证' },
@@ -145,23 +156,31 @@ onUnmounted(() => {
                     </div>
                 </div>
             </div>
-            <nav class="nav">
+
+        <nav class="nav">
                 <div class="nav-container">
-                    <ul class="nav-list">
+                    <div class="mobile-menu-toggle" @click="toggleMobileMenu">
+                        <span class="hamburger" :class="{ active: isMobileMenuOpen }">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <ul class="nav-list" :class="{ 'mobile-open': isMobileMenuOpen }">
                         <li class="nav-item" :class="{ active: currentRoute === 'home' }">
-                            <router-link to="/home">网站首页</router-link>
+                            <router-link to="/home" @click="closeMobileMenu">网站首页</router-link>
                         </li>
                         <li class="nav-item" :class="{ active: currentRoute === 'about' }">
-                            <router-link to="/about">关于我们</router-link>
+                            <router-link to="/about" @click="closeMobileMenu">关于我们</router-link>
                         </li>
                         <li class="nav-item" :class="{ active: currentRoute === 'products' }">
-                            <router-link to="/products">产品展示</router-link>
+                            <router-link to="/products" @click="closeMobileMenu">产品展示</router-link>
                         </li>
                         <li class="nav-item" :class="{ active: currentRoute === 'honors' }">
-                            <router-link to="/honors">资质荣誉</router-link>
+                            <router-link to="/honors" @click="closeMobileMenu">资质荣誉</router-link>
                         </li>
                         <li class="nav-item" :class="{ active: currentRoute === 'order' }">
-                            <router-link to="/order">订货须知</router-link>
+                            <router-link to="/order" @click="closeMobileMenu">订货须知</router-link>
                         </li>
                     </ul>
                 </div>
